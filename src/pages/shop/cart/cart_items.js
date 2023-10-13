@@ -4,7 +4,7 @@ import './cart_style.css'
 import './cartitems_style.css'
 
 
-export const Cartitems = (props) => {
+export const Carttotal = (props) => {
     
     const {id,productname,price,productImage} = props.data;
 

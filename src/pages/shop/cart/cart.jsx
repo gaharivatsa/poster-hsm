@@ -1,9 +1,8 @@
 import React, { useContext }  from "react";
 import { ProductContext } from "../../../context/productscontext";
 import { ShopContext } from "../../../context/shop_context";
-import { Cartitems } from "./cart_items";
 import './cart_style.css'
-
+import {Carttotal} from './cart_items'
 export const Cart = () =>  {
     const { PRODUCTS } = useContext(ProductContext);
     const { cartItems } = useContext(ShopContext);
@@ -24,7 +23,7 @@ export const Cart = () =>  {
             <div className="store">
             <div className="side_cart">
             {sumOfIds !== 0 ? PRODUCTS.map((product) => (
-        cartItems[product.id] !== 0 ? <Cartitems data = {product}/>:null
+        cartItems[product.id] !== 0 ? <Carttotal data = {product}/>:null
 )):<p className="addpr">NONE</p>}
              </div>
              <div className="checkout">
