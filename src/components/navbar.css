@@ -1,0 +1,49 @@
+.navbar{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    background-color: #000000;
+    justify-content: space-between;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    background: rgb(195,40,40);
+background: linear-gradient(90deg, #c32828 31%, rgba(226,182,22,1) 60%);
+-webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.links a {
+    text-decoration: none;
+    color:rgb(189, 198, 73);
+    margin-right: 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-right: 1rem ;
+    padding-left: 1rem;
+}
+
+.links a:hover{
+    background-color: rgb(218, 21, 21);
+    padding: 0.4rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    border-radius: 2rem;
+    transform: scale(1.2);
+}

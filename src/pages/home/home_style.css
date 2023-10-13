@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+  .banner img {
+    width: 100%;       
+    height: 100vh;      
+    object-fit:fill;  
+  }
+
+
+.abt_site{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+    background-image: url('../../assets/bg_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.abt_site > p {
+    letter-spacing: 0.5rem;
+    font-size: 2.4rem;
+    transform: rotateZ(0deg);
+    font-weight: bold;
+    color: rgb(220, 217, 27);
+    animation-name: bg_text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    text-shadow: 2rem;
+    background: rgb(224, 15, 32);
+    padding: 0.3rem;
+}
+
+@keyframes bg_text {
+    from{
+        opacity: 0;
+        display: none;
+        transform: scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../../assets/abtus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.abt{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(129, 127, 239);
+    display: flex;
+}
+
+.abt > p{
+    margin-left: 50%;
+    margin-top: 6%;
+    font-size: 3rem;
+  font-weight: bold;
+  transform: translateX(-50%);
+}
+.cnt{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.cnt > p{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.follow{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* .about > p:first-child{
+  margin-top: 14rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(226, 72, 149);
+}
+
+.about > p:nth-child(2){
+    margin-top: 1rem;
+    padding: 5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(225, 36, 39);
+} */
+
+.total_home{
+    overflow-x: hidden;
+}

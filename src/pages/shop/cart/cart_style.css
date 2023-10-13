@@ -1,0 +1,85 @@
+.CartTitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fd4f4f;
+    padding-top: 2rem;
+}
+
+.store{
+    display: grid;
+    grid-template-columns: 40rem 30rem;
+    justify-content: space-around;
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+.side_cart{
+     display: grid;
+     grid-template-columns: repeat(2,10rem);
+     column-gap: 20rem;
+     row-gap: 4rem;
+}
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    border-radius: 2rem;
+    height: 20rem;
+    max-height: 40rem;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.Cart{
+   background-color: rgb(255, 255, 255);
+   min-height: 100vh;
+}
+
+.Cart > p {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    margin-left: 25%;
+}
+.title{
+    align-self: center;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1rem;
+    letter-spacing: 1rem;
+}
+
+.amt{
+    margin-left: 0.7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.delivery{
+    margin-left: 0.7rem;
+}
+
+.deli{
+    font-weight: bold;
+}
+
+.payment{
+    align-self: center;
+}
+.pay{
+    border-radius: 2rem;
+    background-color: aquamarine;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: 1rem;
+}
+
+.addpr{
+    color: black;
+    font-size: 2rem;
+}

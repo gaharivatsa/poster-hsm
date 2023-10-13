@@ -1,0 +1,55 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    border-radius: 1rem;
+
+}
+
+.box:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+.image > img{
+    height: 15rem;
+    width: 10rem;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.items > button {
+    border-radius: 1rem;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px black solid;
+}
+
+.heading{
+    font-size: 1.4rem;
+    font-weight:10rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.productlink{
+    text-decoration: none;
+    color: black;
+}
