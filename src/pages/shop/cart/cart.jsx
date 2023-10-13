@@ -3,6 +3,7 @@ import { ProductContext } from "../../../context/productscontext";
 import { ShopContext } from "../../../context/shop_context";
 import './cart_style.css'
 import {Carttotal} from './cart_items'
+
 export const Cart = () =>  {
     const { PRODUCTS } = useContext(ProductContext);
     const { cartItems } = useContext(ShopContext);
@@ -13,7 +14,7 @@ export const Cart = () =>  {
     const sumOfProducts = PRODUCTS.reduce((accumulator, product) => {
         return accumulator + product.price * cartItems[product.id];
     }, 0);
-
+    console.log(sumOfIds,sumOfProducts,cartItems)
     return(
         <div className="Cart">
             <div className="CartTitle">
