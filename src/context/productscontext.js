@@ -6,7 +6,7 @@ export const ProductContextProvider = ({ children }) => {
     const [PRODUCTS, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("https://hsm-indol.vercel.app/api")
+        fetch("None")
             .then((response) => response.json())
             .then((data) => {
                 setProducts(data);
