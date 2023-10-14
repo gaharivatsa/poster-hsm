@@ -4,9 +4,10 @@
 .products{
     display: grid;
     grid-template-columns: repeat(2,30rem);
+    height:100vh;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .ShopTitle{
