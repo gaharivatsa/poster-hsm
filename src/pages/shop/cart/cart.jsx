@@ -24,7 +24,7 @@ export const Cart = () =>  {
             <div className="store">
             <div className="side_cart">
             {sumOfIds !== 0 ? PRODUCTS.map((product) => (
-        cartItems[product.id] !== 0 ? <Carttotal data = {product}/>:null
+        (cartItems[product.id] !== 0 && cartItems[product.id] !== null ) ? <Carttotal data = {product}/>:null
 )):<p className="addpr">NONE</p>}
              </div>
              <div className="checkout">
