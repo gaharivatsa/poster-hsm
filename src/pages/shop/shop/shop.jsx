@@ -8,7 +8,8 @@ export const Shop = () =>  {
    
     const { PRODUCTS } = useContext(ProductContext);
 
-    const sets = new Set(PRODUCTS.flatMap((product) => product.tags));
+    const sets = new Set(PRODUCTS.flatMap((product) => product.tags.split(',').map(tag => tag.trim())));
+
 
     const [selectedTag, setSelectedTag] = useState(null);
 
