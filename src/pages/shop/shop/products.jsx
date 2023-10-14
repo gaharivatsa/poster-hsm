@@ -29,7 +29,7 @@ export const Products = (props) => {
         <button onClick={() => addToCart(id)}>
             +
             </button>
-            <div className="val">{cartItemAmount > 0 ? cartItemAmount:<p>{typeof cartItemAmount}</p>}</div>
+            <div className="val">{cartItemAmount > 0 ? cartItemAmount:<p>0</p>}</div>
             <button onClick={() => removeFromCart(id)}>
                 -
             </button>
