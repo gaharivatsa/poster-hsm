@@ -1,5 +1,5 @@
 import React , { createContext , useState } from "react";
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import { ProductContext } from "./productscontext";
 
 
@@ -14,8 +14,13 @@ return cart;
 };
 
 export const ShopContextProvider = (props) => {
+
     const { PRODUCTS } = useContext(ProductContext);
     const [cartItems , setCartItems] = useState(getDefaultCart(PRODUCTS));
+
+    useEffect(() => {
+        setCartItems(getDefaultCart(PRODUCTS));
+    }, [PRODUCTS]);
 
     const addToCart = (itemId) => setCartItems((prev) => ({...prev,[itemId] :  prev[itemId] >= 0 ? prev[itemId]  + 1:0 }))
 
