@@ -23,9 +23,14 @@ export const Cart = () =>  {
             <p>SELECTED PRODUCTS</p>
             <div className="store">
             <div className="side_cart">
-            {sumOfIds !== 0 ? PRODUCTS.map((product) => (
-        (cartItems[product.id] !== 0 && cartItems[product.id] !== null ) ? <Carttotal data = {product}/>:null
-)):<p className="addpr">NONE</p>}
+            {Object.values(cartItems).some(quantity => quantity > 0) ? (
+    PRODUCTS.filter(product => cartItems[product.id] > 0).map((product) => (
+        <Carttotal key={product.id} data={product} />
+    ))
+) : (
+    <p className="addpr">NONE</p>
+)}
+
              </div>
              <div className="checkout">
                 <div className="title">
