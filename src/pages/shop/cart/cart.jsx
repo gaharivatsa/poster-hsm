@@ -37,7 +37,7 @@ export const Cart = () =>  {
                         Checkout
                 </div>
                 <div className="amt">
-                 Net payable amount : {sumOfProducts}
+                 Net payable amount : {sumOfProducts === NaN ? 0:sumOfProducts }
                 </div>
                 <div className="delivery">
                 <span className="deli">Delivered to :</span> Nulla proident do est aliquip. Consequat voluptate do qui et officia mollit magna do magna pariatur laborum consequat voluptate excepteur. Cillum aute elit laborum ullamco.
